@@ -12,7 +12,7 @@ then
 fi
 
 ### Install packages ###
-# Update && upgradepackages
+# Update && upgrade packages
 sudo $TOOL update --yes
 sudo $TOOL upgrade --yes
 
@@ -20,6 +20,7 @@ sudo $TOOL upgrade --yes
 LIST=$(cat $PACKAGES | egrep -v "^\s*(#|$)")
 for package in $LIST
 do
+    echo ''
     sudo $TOOL install $package --yes
 done
 
@@ -38,7 +39,7 @@ do
 done
 
 echo "Removing unneeded packages"
-sudo $TOOL autoremove
+sudo $TOOL autoremove --yes
 
 echo "Finished!"
 
