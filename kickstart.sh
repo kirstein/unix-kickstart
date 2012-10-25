@@ -3,7 +3,7 @@
 SCRIPTS="scripts"
 PACKAGES="packages"
 TOOL="apt-get"
-BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+BASEDIR="$(pwd -P)"
 
 ### Setting package tool ###
 if [ "$#" -eq 1 ]
@@ -35,7 +35,10 @@ do
     chmod +x $FILENAME
     echo "running script: $FILENAME"
     ./$FILENAME
-
 done
 
+echo "Removing unneeded packages"
+sudo $TOOL autoremove
+
+echo "Finished!"
 

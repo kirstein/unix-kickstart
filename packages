@@ -1,5 +1,16 @@
-# browser
+### Web browser ###
 chromium-browser
 
-# git
+### Version control ###
 git
+
+### Development ###
+maven
+
+### Media ###
+vlc
+
+### Misc ###
+xclip
+irssi
+jupiter
