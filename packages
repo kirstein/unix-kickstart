@@ -8,7 +8,8 @@ git
 maven
 curl
 
-### Environment ###
+### Fonts ###
+ttf-inconsolata
 
 ### Media ###
 vlc
