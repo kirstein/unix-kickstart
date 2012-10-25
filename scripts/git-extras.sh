@@ -1,0 +1,1 @@
+curl https://raw.github.com/visionmedia/git-extras/master/bin/git-extras | INSTALL=y sh
