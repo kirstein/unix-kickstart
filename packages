@@ -1,26 +1,60 @@
-### Web browser ###
+############################## P R O G R A M M I N G ##################################
+
+### Development tools
+maven
+
+### Version control
+git
+git-cola
+
+### Eclipse
+# eclipse development environment
+eclipse
+# Java development environment
+eclipse-jdt
+# remote system explorer
+eclipse-rse
+# XML, XSD development
+eclipse-xsd-sdk
+
+### Database
+postgresql
+postgresql-contrib
+pgadmin3
+
+############################## G E N E R A L ##################################
+
+### Web browser
 chromium-browser
 
-### Version control ###
-git
+### Virtualbox
+virtualbox-ose-qt
 
-### Development ###
-maven
-curl
-
-### Fonts ###
-ttf-inconsolata
-
-### Media ###
-vlc
-
-### Social messengers ###
+### Social messengers
 irssi
 
-### Misc ###
+### Media players
+vlc
+
+############################## M I S C E L L A N E O U S ##################################
+
+### Development tools
+curl
+
+### Fonts
+ttf-inconsolata
+
+### Stuff
 xclip
 jupiter
 
-### OS manipulation ###
+############################## S Y S T E M ##################################
+
+### Performance tweaks
+# Monitors often used applications, and preloads them for faster startup.
 preload
+# Use compressed RAM based swap, because it works way faster that HDD swap,
 zramswap-enabler
+
+### System monitor
+sysstat

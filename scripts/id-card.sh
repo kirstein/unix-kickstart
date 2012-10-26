@@ -42,7 +42,7 @@ update_repo()
 
 install_estonianidcard()
 {
-	sudo apt-get install estonianidcard
+	sudo apt-get install estonianidcard --yes
 }
 
 check_privileges
