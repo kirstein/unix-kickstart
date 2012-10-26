@@ -2,26 +2,18 @@
 
 SCRIPTS="scripts"
 PACKAGES="packages"
-TOOL="apt-get"
 BASEDIR="$(pwd -P)"
-
-### Setting package tool ###
-if [ "$#" -eq 1 ]
-then
-    TOOL=$1
-fi
 
 ### Install packages ###
 # Update && upgrade packages
-sudo $TOOL update --yes
-sudo $TOOL upgrade --yes
+sudo apt-get update --yes
+sudo apt-get upgrade --yes
 
 # loop the package listing
 LIST=$(cat $PACKAGES | egrep -v "^\s*(#|$)")
 for package in $LIST
 do
-    echo ''
-    sudo $TOOL install $package --yes
+    sudo apt-get install $package --yes
 done
 
 
@@ -39,7 +31,7 @@ do
 done
 
 echo "Removing unneeded packages"
-sudo $TOOL autoremove --yes
+sudo apt-get autoremove --yes
 
-echo "Finished!"
+echo "Finished! It would be wise to reboot now."
 
