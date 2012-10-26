@@ -14,7 +14,7 @@ Personal list of must-have packets, scripts that i am sick and tired of re-insta
 2. Clone from git
 
     ```
-    git clone git@github.com:kirstein/unix-kickstart.git
+    git clone https://github.com/kirstein/unix-kickstart.git
     cd unix-kickstart
     sudo chmod +x kickstart.sh
     sudo sh kickstart.sh
