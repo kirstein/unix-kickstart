@@ -1,4 +1,4 @@
-alias gd="git diff | mate"
+alias gd="git diff | sublime-text-2"
 alias ga="git add"
 alias gbd="git branch -D"
 alias gst="git status"
