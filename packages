@@ -6,6 +6,7 @@ maven
 ### Version control
 git
 git-cola
+subversion
 
 ### Eclipse
 # eclipse development environment
